@@ -1,0 +1,24 @@
+dsa_priv.pem
+*.tgz
+*.svn
+Sparkle.framework
+DerivedData/
+# Xcode
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+*.xcuserstate
+project.xcworkspace/
+xcuserdata/
+
+# Generated files
+*.o
+*.pyc
+# Backup files
+*~.nib
+InsomniaX.app
+*.xcuserstate
+*.perspective
+
+*.mode1

@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="6206.8" systemVersion="14A379a" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
+    <dependencies>
+        <deployment version="1080" identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="6206.8"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
+            <connections>
+                <outlet property="dockMenu" destination="210" id="816"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customObject id="208" userLabel="ButtonController" customClass="ButtonController">
+            <connections>
+                <outlet property="CPUSafetyItem" destination="761" id="771"/>
+                <outlet property="StartOnLoginItem" destination="716" id="791"/>
+                <outlet property="disableIdleSleepForItem" destination="gm0-Qe-JDK" id="G63-6s-KWz"/>
+                <outlet property="disableIdleSleepForSlider" destination="Xha-c4-i5p" id="QSo-5t-pwO"/>
+                <outlet property="disableIdleSleepOnACItem" destination="783" id="3XY-SY-SF3"/>
+                <outlet property="disableLidSleepForItem" destination="yH0-Zt-hBd" id="vKo-dS-Vsd"/>
+                <outlet property="disableLidSleepForSlider" destination="50q-s0-IaA" id="KVn-Yb-epE"/>
+                <outlet property="disableLidSleepOnACItem" destination="775" id="797"/>
+                <outlet property="displaySleepHotKeyPanel" destination="rRP-b7-4f9" id="Qk1-xi-DsC"/>
+                <outlet property="displaySleepSR" destination="tbX-HZ-Z2m" id="l7R-tb-Ten"/>
+                <outlet property="idleHotKeyPanel" destination="833" id="840"/>
+                <outlet property="idleSR" destination="835" id="836"/>
+                <outlet property="lidHotKeyItem" destination="851" id="8Es-gF-WEo"/>
+                <outlet property="lidHotKeyPanel" destination="830" id="853"/>
+                <outlet property="lidSR" destination="832" id="837"/>
+                <outlet property="sleepDisplayItem" destination="662" id="wIh-t8-bKE"/>
+                <outlet property="soundMenuItem" destination="854" id="866"/>
+                <outlet property="statusIdleSleepItem" destination="611" id="614"/>
+                <outlet property="statusInsomniaItem" destination="659" id="660"/>
+                <outlet property="statusMenu" destination="210" id="223"/>
+            </connections>
+        </customObject>
+        <customObject id="863" customClass="SUUpdater"/>
+        <userDefaultsController representsSharedInstance="YES" id="267" userLabel="Shared Defaults"/>
+        <menu title="Main Menu" autoenablesItems="NO" id="210" userLabel="statusMenu">
+            <items>
+                <menuItem title="Disable Lid Sleep" id="659">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="insomnia:" target="208" id="661"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="Disable Idle Sleep" id="611" userLabel="Menu Item - Disable Idle Sleep">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="idleSleepItem:" target="208" id="612"/>
+                    </connections>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="d9d-Wx-281"/>
+                <menuItem title="Disable Lid Sleep for..." id="yH0-Zt-hBd">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="makeKeyAndOrderFront:" target="5Jy-8j-9d2" id="yNU-Ip-RD5"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="Disable Idle Sleep for..." id="gm0-Qe-JDK">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="makeKeyAndOrderFront:" target="70e-Gu-NP6" id="HkR-6O-O56"/>
+                    </connections>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="583">
+                    <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                </menuItem>
+                <menuItem title="Sleep Display Now" id="662">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="sleepDisplay:" target="208" id="663"/>
+                    </connections>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="325">
+                    <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                </menuItem>
+                <menuItem title="Preferences" id="675">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" title="Preferences" id="676">
+                        <items>
+                            <menuItem title="Disable Lid Sleep when on AC" id="775">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="disableLidSleepOnAC:" target="208" id="806"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Disable Idle Sleep when on AC" id="783">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="disableIdleSleepOnAC:" target="208" id="812"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" enabled="YES" id="842"/>
+                            <menuItem title="Set Lid Sleep Hot Key" id="851">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="lidHotKeyItem:" target="208" id="852"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Set Idle Sleep Hot Key" id="844">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="idleHotKeyItem:" target="208" id="850"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Set Sleep Display Hot Key" id="6FK-1w-UJL">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="makeKeyAndOrderFront:" target="rRP-b7-4f9" id="egS-7x-ur5"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="855"/>
+                            <menuItem title="Sound Effects" id="854">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="soundItem:" target="208" id="856"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="788"/>
+                            <menuItem title="CPU Safety" id="761">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="CPUSafety:" target="208" id="770"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="789"/>
+                            <menuItem title="Start on Login" id="716">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="startOnLogin:" target="208" id="815"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Save states on exit" id="790">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <binding destination="267" name="value" keyPath="values.saveStateOnExit" id="827">
+                                        <dictionary key="options">
+                                            <bool key="NSAllowsEditingMultipleValuesSelection" value="NO"/>
+                                            <bool key="NSConditionallySetsEnabled" value="NO"/>
+                                            <bool key="NSValidatesImmediately" value="YES"/>
+                                        </dictionary>
+                                    </binding>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="349">
+                    <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                </menuItem>
+                <menuItem title="Check for Updates" id="864">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="checkForUpdates:" target="863" id="865"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="Open Readme" id="670">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="readmeItem:" target="208" id="671"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="Run Diagnostics" id="ez9-DF-uyv">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="runDiagnostics:" target="208" id="UKm-I5-ZTy"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="About InsomniaX" id="664">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="aboutItem:" target="208" id="674"/>
+                    </connections>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="214">
+                    <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                </menuItem>
+                <menuItem title="Quit InsomniaX" id="666">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="quitInsomniaX:" target="208" id="667"/>
+                    </connections>
+                </menuItem>
+            </items>
+            <connections>
+                <outlet property="delegate" destination="208" id="362"/>
+            </connections>
+            <point key="canvasLocation" x="142.5" y="272.5"/>
+        </menu>
+        <window title="Hot Key - Idle Sleep" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="833" customClass="NSPanel">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" utility="YES" HUD="YES"/>
+            <rect key="contentRect" x="131" y="159" width="338" height="63"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1440" height="877"/>
+            <view key="contentView" id="834">
+                <rect key="frame" x="0.0" y="0.0" width="338" height="63"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <customView id="835" customClass="SRRecorderControl">
+                        <rect key="frame" x="53" y="20" width="233" height="33"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <connections>
+                            <outlet property="delegate" destination="208" id="838"/>
+                        </connections>
+                    </customView>
+                </subviews>
+            </view>
+            <point key="canvasLocation" x="346" y="521.5"/>
+        </window>
+        <window title="Hot Key - Lid Sleep" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="830" customClass="NSPanel">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" utility="YES" HUD="YES"/>
+            <rect key="contentRect" x="404" y="238" width="338" height="63"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1366" height="746"/>
+            <view key="contentView" id="831">
+                <rect key="frame" x="0.0" y="0.0" width="338" height="63"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <customView id="832" customClass="SRRecorderControl">
+                        <rect key="frame" x="53" y="20" width="233" height="33"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <connections>
+                            <outlet property="delegate" destination="208" id="839"/>
+                        </connections>
+                    </customView>
+                </subviews>
+                <connections>
+                    <outlet property="nextKeyView" destination="832" id="847"/>
+                </connections>
+            </view>
+            <point key="canvasLocation" x="357" y="20.5"/>
+        </window>
+        <window title="Disable Lid Sleep For..." allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="5Jy-8j-9d2" customClass="NSPanel">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" utility="YES" HUD="YES"/>
+            <rect key="contentRect" x="131" y="159" width="282" height="138"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1440" height="877"/>
+            <view key="contentView" id="ceA-zB-Ptw">
+                <rect key="frame" x="0.0" y="0.0" width="282" height="138"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <slider verticalHuggingPriority="750" id="50q-s0-IaA">
+                        <rect key="frame" x="18" y="60" width="234" height="25"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <sliderCell key="cell" state="on" alignment="left" minValue="15" maxValue="360" doubleValue="15" tickMarkPosition="below" numberOfTickMarks="24" allowsTickMarkValuesOnly="YES" sliderType="linear" id="Jwx-5m-AjN"/>
+                        <connections>
+                            <action selector="takeIntegerValueFrom:" target="n7v-If-j8a" id="0r2-2f-Jpl"/>
+                            <binding destination="267" name="value" keyPath="values.lidSleepForSlider" id="YwS-ZX-meO">
+                                <dictionary key="options">
+                                    <bool key="NSValidatesImmediately" value="YES"/>
+                                </dictionary>
+                            </binding>
+                        </connections>
+                    </slider>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="n7v-If-j8a">
+                        <rect key="frame" x="18" y="24" width="32" height="17"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="15" id="zwq-5i-74P">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                        <connections>
+                            <action selector="takeIntegerValueFrom:" target="50q-s0-IaA" id="Zhg-dP-b7D"/>
+                            <binding destination="267" name="value" keyPath="values.lidSleepForSlider" id="mQA-bs-cMX">
+                                <dictionary key="options">
+                                    <string key="NSNullPlaceholder">15</string>
+                                    <bool key="NSValidatesImmediately" value="YES"/>
+                                </dictionary>
+                            </binding>
+                        </connections>
+                    </textField>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="c8g-eB-A00">
+                        <rect key="frame" x="49" y="24" width="53" height="17"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Minutes" id="ZBq-mb-qcw">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="adg-em-z7b">
+                        <rect key="frame" x="18" y="101" width="246" height="17"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Drag the slider to set the period of time" id="sA6-uq-dj0">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <button verticalHuggingPriority="750" id="c44-aA-VwR">
+                        <rect key="frame" x="147" y="13" width="109" height="32"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="push" title="Start Timer" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="kTp-w4-jwr">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="disableLidSleepFor:" target="208" id="dbH-Ia-jI2"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <point key="canvasLocation" x="423" y="318"/>
+        </window>
+        <window title="Disable Idle Sleep For..." allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="70e-Gu-NP6" customClass="NSPanel">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" utility="YES" HUD="YES"/>
+            <rect key="contentRect" x="131" y="159" width="282" height="138"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1440" height="877"/>
+            <view key="contentView" id="bZM-EL-Ije">
+                <rect key="frame" x="0.0" y="0.0" width="282" height="138"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="prY-D4-nU0">
+                        <rect key="frame" x="18" y="24" width="32" height="17"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="15" id="SRH-vW-FUC">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                        <connections>
+                            <action selector="takeIntegerValueFrom:" target="Xha-c4-i5p" id="HOb-hE-zko"/>
+                            <binding destination="267" name="value" keyPath="values.idleSleepForSlider" id="AoN-km-Z83">
+                                <dictionary key="options">
+                                    <string key="NSNullPlaceholder">15</string>
+                                    <bool key="NSValidatesImmediately" value="YES"/>
+                                </dictionary>
+                            </binding>
+                        </connections>
+                    </textField>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="7M2-Tu-yaF">
+                        <rect key="frame" x="49" y="24" width="53" height="17"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Minutes" id="yeo-r5-d2F">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="fjR-JN-tcj">
+                        <rect key="frame" x="18" y="101" width="246" height="17"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Drag the slider to set the period of time" id="ynG-fZ-hzl">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <button verticalHuggingPriority="750" id="1Qg-qV-1Wz">
+                        <rect key="frame" x="147" y="13" width="109" height="32"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="push" title="Start Timer" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="D7z-MX-Aga">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="disableIdleSleepFor:" target="208" id="1i7-CK-SVQ"/>
+                        </connections>
+                    </button>
+                    <slider verticalHuggingPriority="750" id="Xha-c4-i5p">
+                        <rect key="frame" x="18" y="60" width="234" height="25"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <sliderCell key="cell" alignment="left" minValue="15" maxValue="360" doubleValue="15" tickMarkPosition="below" numberOfTickMarks="24" allowsTickMarkValuesOnly="YES" sliderType="linear" id="wME-j6-CD2"/>
+                        <connections>
+                            <action selector="takeIntegerValueFrom:" target="prY-D4-nU0" id="peA-v8-sLH"/>
+                            <binding destination="267" name="value" keyPath="values.idleSleepForSlider" id="3CE-Tb-fX0">
+                                <dictionary key="options">
+                                    <bool key="NSValidatesImmediately" value="YES"/>
+                                </dictionary>
+                            </binding>
+                        </connections>
+                    </slider>
+                </subviews>
+            </view>
+            <point key="canvasLocation" x="492" y="452"/>
+        </window>
+        <window title="Hot Key - Sleep Display" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="rRP-b7-4f9" customClass="NSPanel">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" utility="YES" HUD="YES"/>
+            <rect key="contentRect" x="131" y="159" width="338" height="63"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1440" height="877"/>
+            <view key="contentView" id="NgJ-3M-A5w">
+                <rect key="frame" x="0.0" y="0.0" width="338" height="63"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <customView id="tbX-HZ-Z2m" customClass="SRRecorderControl">
+                        <rect key="frame" x="53" y="20" width="233" height="33"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <connections>
+                            <outlet property="delegate" destination="208" id="oYB-kA-Oee"/>
+                        </connections>
+                    </customView>
+                </subviews>
+            </view>
+            <point key="canvasLocation" x="481" y="223.5"/>
+        </window>
+    </objects>
+</document>

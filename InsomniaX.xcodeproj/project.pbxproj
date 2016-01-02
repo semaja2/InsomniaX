@@ -1,0 +1,879 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		9E93C564139B4D67005AD53B /* InsomniaX with Loader */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 9E93C57D139B4DAF005AD53B /* Build configuration list for PBXAggregateTarget "InsomniaX with Loader" */;
+			buildPhases = (
+			);
+			dependencies = (
+				9E93C568139B4D83005AD53B /* PBXTargetDependency */,
+				9E93C56A139B4D85005AD53B /* PBXTargetDependency */,
+			);
+			name = "InsomniaX with Loader";
+			productName = "InsomniaX with Loader";
+		};
+		9EDCA86915DD0C6F001CCAA5 /* InsomniaX with dependencies */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 9EDCA86A15DD0C6F001CCAA5 /* Build configuration list for PBXAggregateTarget "InsomniaX with dependencies" */;
+			buildPhases = (
+			);
+			dependencies = (
+				9EDCA87215DD0C84001CCAA5 /* PBXTargetDependency */,
+				9EDCA87015DD0C82001CCAA5 /* PBXTargetDependency */,
+				9EDCA86E15DD0C7D001CCAA5 /* PBXTargetDependency */,
+				9EDCA87415DD0CBF001CCAA5 /* PBXTargetDependency */,
+			);
+			name = "InsomniaX with dependencies";
+			productName = "InsomniaX with dependencies";
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		8D11072A0486CEB800E47090 /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = 29B97318FDCFA39411CA2CEA /* MainMenu.nib */; };
+		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
+		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
+		9E0330710CD3827B008F7547 /* authtool.c in Sources */ = {isa = PBXBuildFile; fileRef = 9E03303E0CD37F19008F7547 /* authtool.c */; };
+		9E0F8AB70B8DBF33000ADC27 /* Credits.html in Resources */ = {isa = PBXBuildFile; fileRef = 9E0F8AB60B8DBF33000ADC27 /* Credits.html */; };
+		9E1A3D7619D84B3C004588BF /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E597330154C042800D71B96 /* Security.framework */; };
+		9E1A3D7719D84B57004588BF /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9ED0D4D3156B486500A00D6C /* Carbon.framework */; };
+		9E1EB51015D797D4008F0708 /* PTHotKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E1EB50815D797D4008F0708 /* PTHotKey.m */; };
+		9E1EB51115D797D4008F0708 /* PTHotKeyCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E1EB50A15D797D4008F0708 /* PTHotKeyCenter.m */; };
+		9E1EB51215D797D4008F0708 /* PTKeyCodeTranslator.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E1EB50C15D797D4008F0708 /* PTKeyCodeTranslator.m */; };
+		9E1EB51315D797D4008F0708 /* PTKeyCombo.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E1EB50E15D797D4008F0708 /* PTKeyCombo.m */; };
+		9E23B22F139B7E610073ABA9 /* loader in Resources */ = {isa = PBXBuildFile; fileRef = 9EC3F4C10BEC64B600F13084 /* loader */; };
+		9E3A1B190B5E324E0006A37F /* ButtonController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E3A1B180B5E324E0006A37F /* ButtonController.m */; };
+		9E4B3C02139DD296009F70A4 /* LaunchAtLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E4B3C01139DD296009F70A4 /* LaunchAtLoginController.m */; };
+		9E56DF1B0C426E3A00147404 /* Readme.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 9E56DF1A0C426E3A00147404 /* Readme.rtf */; };
+		9E597333154C043700D71B96 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E597332154C043700D71B96 /* IOKit.framework */; };
+		9E597335154C045400D71B96 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E597334154C045400D71B96 /* Cocoa.framework */; };
+		9E6322FB0B789A8600177E88 /* InsomniaX.icns in Resources */ = {isa = PBXBuildFile; fileRef = 9E6322F70B789A8600177E88 /* InsomniaX.icns */; };
+		9E7992080C6D44BB003B21D4 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9E7992060C6D44BB003B21D4 /* Localizable.strings */; };
+		9E898F8D15DE51F7003651EF /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E898F8C15DE51F7003651EF /* Sparkle.framework */; };
+		9E898F8E15DE530E003651EF /* Sparkle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9E898F8C15DE51F7003651EF /* Sparkle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		9E898F9415DE54A2003651EF /* dsa_pub.pem in Resources */ = {isa = PBXBuildFile; fileRef = 9E898F9115DE54A2003651EF /* dsa_pub.pem */; };
+		9EB67B3C15D92A1C00BE9BC3 /* ShortcutRecorder.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9EB67B3815D9297500BE9BC3 /* ShortcutRecorder.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		9EB67B3D15D92A2500BE9BC3 /* ShortcutRecorder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EB67B3815D9297500BE9BC3 /* ShortcutRecorder.framework */; };
+		9EBBD77213F68E5E00CE9547 /* smc.c in Sources */ = {isa = PBXBuildFile; fileRef = 9EBBD76F13F68E5E00CE9547 /* smc.c */; };
+		9EC3F44F0BEC31A000F13084 /* donate.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9E0F8ACE0B8DC0C5000ADC27 /* donate.gif */; };
+		9ED0D4D1156B47B400A00D6C /* Rules.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9ED0D4D0156B47B400A00D6C /* Rules.plist */; };
+		9ED0D4D2156B486000A00D6C /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E597330154C042800D71B96 /* Security.framework */; };
+		9ED0D4D4156B486500A00D6C /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9ED0D4D3156B486500A00D6C /* Carbon.framework */; };
+		9EDCA86815DD0B7E001CCAA5 /* Insomnia_r11.kext in Resources */ = {isa = PBXBuildFile; fileRef = 9EDCA86715DD0B7E001CCAA5 /* Insomnia_r11.kext */; };
+		9EDCA87715DD114D001CCAA5 /* beep1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9EDCA87515DD114D001CCAA5 /* beep1.wav */; };
+		9EDCA87815DD114D001CCAA5 /* beep2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9EDCA87615DD114D001CCAA5 /* beep2.wav */; };
+		9EDCA87B15DD1303001CCAA5 /* beep3.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9EDCA87915DD1303001CCAA5 /* beep3.wav */; };
+		9EDCA87C15DD1303001CCAA5 /* beep4.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9EDCA87A15DD1303001CCAA5 /* beep4.wav */; };
+		9EF7106F16994CD300DF0B48 /* IdleSleep@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9EF7106716994C4D00DF0B48 /* IdleSleep@2x.png */; };
+		9EF7107016994CD300DF0B48 /* LidIdleSleep@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9EF7106816994C4D00DF0B48 /* LidIdleSleep@2x.png */; };
+		9EF7107116994CD300DF0B48 /* LidSleep@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9EF7106916994C4D00DF0B48 /* LidSleep@2x.png */; };
+		9EF7107216994CD300DF0B48 /* Normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9EF7106A16994C4D00DF0B48 /* Normal@2x.png */; };
+		9EF7107316994D0B00DF0B48 /* IdleSleep.png in Resources */ = {isa = PBXBuildFile; fileRef = 9EF7105516993EAB00DF0B48 /* IdleSleep.png */; };
+		9EF7107416994D0B00DF0B48 /* LidIdleSleep.png in Resources */ = {isa = PBXBuildFile; fileRef = 9EF7105616993EAB00DF0B48 /* LidIdleSleep.png */; };
+		9EF7107516994D0B00DF0B48 /* LidSleep.png in Resources */ = {isa = PBXBuildFile; fileRef = 9EF7105716993EAB00DF0B48 /* LidSleep.png */; };
+		9EF7107616994D0B00DF0B48 /* Normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 9EF7105816993EAB00DF0B48 /* Normal.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9E93C567139B4D83005AD53B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9EC3F4C00BEC64B600F13084;
+			remoteInfo = loader;
+		};
+		9E93C569139B4D85005AD53B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D1107260486CEB800E47090;
+			remoteInfo = InsomniaX;
+		};
+		9EB67B3715D9297500BE9BC3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9EB67B2E15D9297500BE9BC3 /* ShortcutRecorder.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 939837800DA42965007F53F3;
+			remoteInfo = ShortcutRecorder.framework;
+		};
+		9EDCA86515DD0985001CCAA5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9EDCA85E15DD0985001CCAA5 /* Insomnia.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3816D10F0CB6A5DD0000188C;
+			remoteInfo = "Insomnia Extension";
+		};
+		9EDCA86D15DD0C7D001CCAA5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9EC3F4C00BEC64B600F13084;
+			remoteInfo = loader;
+		};
+		9EDCA86F15DD0C82001CCAA5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9EB67B2E15D9297500BE9BC3 /* ShortcutRecorder.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 9398377F0DA42965007F53F3;
+			remoteInfo = ShortcutRecorder.framework;
+		};
+		9EDCA87115DD0C84001CCAA5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9EDCA85E15DD0985001CCAA5 /* Insomnia.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = FA95587B0BEA42A9006F6AE9;
+			remoteInfo = "Insomnia Extension";
+		};
+		9EDCA87315DD0CBF001CCAA5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D1107260486CEB800E47090;
+			remoteInfo = InsomniaX;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9ED679470B756919004CFFEB /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				9EB67B3C15D92A1C00BE9BC3 /* ShortcutRecorder.framework in CopyFiles */,
+				9E898F8E15DE530E003651EF /* Sparkle.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		29B97319FDCFA39411CA2CEA /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		8D1107320486CEB800E47090 /* InsomniaX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InsomniaX.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E03303D0CD37F19008F7547 /* authtool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = authtool.h; sourceTree = "<group>"; };
+		9E03303E0CD37F19008F7547 /* authtool.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = authtool.c; sourceTree = "<group>"; };
+		9E03303F0CD37F19008F7547 /* auth_tool_run.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = auth_tool_run.c; sourceTree = "<group>"; };
+		9E0F8AB40B8DBF1E000ADC27 /* English */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.html; name = English; path = English.lproj/Credits.html; sourceTree = "<group>"; };
+		9E0F8ACE0B8DC0C5000ADC27 /* donate.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = donate.gif; sourceTree = "<group>"; };
+		9E1EB50715D797D4008F0708 /* PTHotKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTHotKey.h; sourceTree = "<group>"; };
+		9E1EB50815D797D4008F0708 /* PTHotKey.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTHotKey.m; sourceTree = "<group>"; };
+		9E1EB50915D797D4008F0708 /* PTHotKeyCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTHotKeyCenter.h; sourceTree = "<group>"; };
+		9E1EB50A15D797D4008F0708 /* PTHotKeyCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTHotKeyCenter.m; sourceTree = "<group>"; };
+		9E1EB50B15D797D4008F0708 /* PTKeyCodeTranslator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTKeyCodeTranslator.h; sourceTree = "<group>"; };
+		9E1EB50C15D797D4008F0708 /* PTKeyCodeTranslator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTKeyCodeTranslator.m; sourceTree = "<group>"; };
+		9E1EB50D15D797D4008F0708 /* PTKeyCombo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTKeyCombo.h; sourceTree = "<group>"; };
+		9E1EB50E15D797D4008F0708 /* PTKeyCombo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTKeyCombo.m; sourceTree = "<group>"; };
+		9E1EEC150BEB2C9100490683 /* loader */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = loader; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E29610415EB2995002A7749 /* LoaderInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = LoaderInfo.plist; sourceTree = "<group>"; };
+		9E3A1B170B5E324D0006A37F /* ButtonController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ButtonController.h; sourceTree = "<group>"; };
+		9E3A1B180B5E324E0006A37F /* ButtonController.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = ButtonController.m; sourceTree = "<group>"; wrapsLines = 0; };
+		9E4B3C00139DD296009F70A4 /* LaunchAtLoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LaunchAtLoginController.h; sourceTree = "<group>"; };
+		9E4B3C01139DD296009F70A4 /* LaunchAtLoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LaunchAtLoginController.m; sourceTree = "<group>"; };
+		9E56DF1A0C426E3A00147404 /* Readme.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Readme.rtf; sourceTree = "<group>"; };
+		9E597330154C042800D71B96 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		9E597332154C043700D71B96 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		9E597334154C045400D71B96 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		9E6322F70B789A8600177E88 /* InsomniaX.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = InsomniaX.icns; path = resources/images/InsomniaX.icns; sourceTree = "<group>"; };
+		9E7991CD0C6D435F003B21D4 /* AuthorizedTaskManager.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = AuthorizedTaskManager.h; sourceTree = "<group>"; };
+		9E7991CE0C6D435F003B21D4 /* AuthorizedTaskManager.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = AuthorizedTaskManager.m; sourceTree = "<group>"; };
+		9E7991CF0C6D435F003B21D4 /* DiskImageUtilities.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = DiskImageUtilities.h; sourceTree = "<group>"; };
+		9E7991D00C6D435F003B21D4 /* DiskImageUtilities.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = DiskImageUtilities.m; sourceTree = "<group>"; };
+		9E7992070C6D44BB003B21D4 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/Localizable.strings; sourceTree = "<group>"; };
+		9E898F8C15DE51F7003651EF /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
+		9E898F9015DE54A2003651EF /* dsa_priv.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dsa_priv.pem; sourceTree = "<group>"; };
+		9E898F9115DE54A2003651EF /* dsa_pub.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dsa_pub.pem; sourceTree = "<group>"; };
+		9E898F9215DE54A2003651EF /* sign_update.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = sign_update.rb; sourceTree = "<group>"; };
+		9EB67B2E15D9297500BE9BC3 /* ShortcutRecorder.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ShortcutRecorder.xcodeproj; path = shortcutrecorder/ShortcutRecorder.xcodeproj; sourceTree = "<group>"; };
+		9EBBD76F13F68E5E00CE9547 /* smc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = smc.c; sourceTree = "<group>"; };
+		9EBBD77013F68E5E00CE9547 /* smc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = smc.h; sourceTree = "<group>"; };
+		9EC3F4C10BEC64B600F13084 /* loader */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = loader; sourceTree = BUILT_PRODUCTS_DIR; };
+		9ED0D4D0156B47B400A00D6C /* Rules.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Rules.plist; sourceTree = "<group>"; };
+		9ED0D4D3156B486500A00D6C /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
+		9EDCA85E15DD0985001CCAA5 /* Insomnia.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Insomnia.xcodeproj; path = "Insomnia r7/Insomnia.xcodeproj"; sourceTree = "<group>"; };
+		9EDCA86715DD0B7E001CCAA5 /* Insomnia_r11.kext */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.kernel-extension"; name = Insomnia_r11.kext; path = ../Default/Insomnia_r11.kext; sourceTree = BUILT_PRODUCTS_DIR; };
+		9EDCA87515DD114D001CCAA5 /* beep1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = beep1.wav; path = resources/sounds/beep1.wav; sourceTree = "<group>"; };
+		9EDCA87615DD114D001CCAA5 /* beep2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = beep2.wav; path = resources/sounds/beep2.wav; sourceTree = "<group>"; };
+		9EDCA87915DD1303001CCAA5 /* beep3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = beep3.wav; path = resources/sounds/beep3.wav; sourceTree = "<group>"; };
+		9EDCA87A15DD1303001CCAA5 /* beep4.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = beep4.wav; path = resources/sounds/beep4.wav; sourceTree = "<group>"; };
+		9EF7105516993EAB00DF0B48 /* IdleSleep.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = IdleSleep.png; path = "resources/menu item images/IdleSleep.png"; sourceTree = "<group>"; };
+		9EF7105616993EAB00DF0B48 /* LidIdleSleep.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = LidIdleSleep.png; path = "resources/menu item images/LidIdleSleep.png"; sourceTree = "<group>"; };
+		9EF7105716993EAB00DF0B48 /* LidSleep.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = LidSleep.png; path = "resources/menu item images/LidSleep.png"; sourceTree = "<group>"; };
+		9EF7105816993EAB00DF0B48 /* Normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Normal.png; path = "resources/menu item images/Normal.png"; sourceTree = "<group>"; };
+		9EF7106716994C4D00DF0B48 /* IdleSleep@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "IdleSleep@2x.png"; path = "resources/menu item images/IdleSleep@2x.png"; sourceTree = "<group>"; };
+		9EF7106816994C4D00DF0B48 /* LidIdleSleep@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "LidIdleSleep@2x.png"; path = "resources/menu item images/LidIdleSleep@2x.png"; sourceTree = "<group>"; };
+		9EF7106916994C4D00DF0B48 /* LidSleep@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "LidSleep@2x.png"; path = "resources/menu item images/LidSleep@2x.png"; sourceTree = "<group>"; };
+		9EF7106A16994C4D00DF0B48 /* Normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Normal@2x.png"; path = "resources/menu item images/Normal@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D11072E0486CEB800E47090 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E1A3D7719D84B57004588BF /* Carbon.framework in Frameworks */,
+				9E597335154C045400D71B96 /* Cocoa.framework in Frameworks */,
+				9E1A3D7619D84B3C004588BF /* Security.framework in Frameworks */,
+				9E597333154C043700D71B96 /* IOKit.framework in Frameworks */,
+				9EB67B3D15D92A2500BE9BC3 /* ShortcutRecorder.framework in Frameworks */,
+				9E898F8D15DE51F7003651EF /* Sparkle.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9EC3F4BF0BEC64B600F13084 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9ED0D4D4156B486500A00D6C /* Carbon.framework in Frameworks */,
+				9ED0D4D2156B486000A00D6C /* Security.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				9E1EB50615D797D4008F0708 /* HotKey */,
+				9EBBD76C13F68E3F00CE9547 /* SMC */,
+				9E4B3C00139DD296009F70A4 /* LaunchAtLoginController.h */,
+				9E4B3C01139DD296009F70A4 /* LaunchAtLoginController.m */,
+				9E7991CD0C6D435F003B21D4 /* AuthorizedTaskManager.h */,
+				9E7991CE0C6D435F003B21D4 /* AuthorizedTaskManager.m */,
+				9E7991CF0C6D435F003B21D4 /* DiskImageUtilities.h */,
+				9E7991D00C6D435F003B21D4 /* DiskImageUtilities.m */,
+				9EE2929F0BF1E24400BC3839 /* Loader */,
+				9E3A1B170B5E324D0006A37F /* ButtonController.h */,
+				9E3A1B180B5E324E0006A37F /* ButtonController.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107320486CEB800E47090 /* InsomniaX.app */,
+				9EC3F4C10BEC64B600F13084 /* loader */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* InsomniaX */ = {
+			isa = PBXGroup;
+			children = (
+				9E29610415EB2995002A7749 /* LoaderInfo.plist */,
+				9EDCA85E15DD0985001CCAA5 /* Insomnia.xcodeproj */,
+				9EB67B2E15D9297500BE9BC3 /* ShortcutRecorder.xcodeproj */,
+				9E1EB52A15D7BAC5008F0708 /* Frameworks */,
+				9E2B61AA0B7C7C80009625A7 /* Engines */,
+				9E2B61A70B7C7C48009625A7 /* Images */,
+				9E2B61A50B7C7C3D009625A7 /* Sounds */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = InsomniaX;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9E898F8F15DE54A2003651EF /* Signing Tools */,
+				9ED0D4D0156B47B400A00D6C /* Rules.plist */,
+				9E7992060C6D44BB003B21D4 /* Localizable.strings */,
+				9E56DF1A0C426E3A00147404 /* Readme.rtf */,
+				9E0F8ACE0B8DC0C5000ADC27 /* donate.gif */,
+				9E0F8AB60B8DBF33000ADC27 /* Credits.html */,
+				8D1107310486CEB800E47090 /* Info.plist */,
+				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
+				29B97318FDCFA39411CA2CEA /* MainMenu.nib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		9E1EB50615D797D4008F0708 /* HotKey */ = {
+			isa = PBXGroup;
+			children = (
+				9E1EB50715D797D4008F0708 /* PTHotKey.h */,
+				9E1EB50815D797D4008F0708 /* PTHotKey.m */,
+				9E1EB50915D797D4008F0708 /* PTHotKeyCenter.h */,
+				9E1EB50A15D797D4008F0708 /* PTHotKeyCenter.m */,
+				9E1EB50B15D797D4008F0708 /* PTKeyCodeTranslator.h */,
+				9E1EB50C15D797D4008F0708 /* PTKeyCodeTranslator.m */,
+				9E1EB50D15D797D4008F0708 /* PTKeyCombo.h */,
+				9E1EB50E15D797D4008F0708 /* PTKeyCombo.m */,
+			);
+			path = HotKey;
+			sourceTree = "<group>";
+		};
+		9E1EB52A15D7BAC5008F0708 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9E898F8C15DE51F7003651EF /* Sparkle.framework */,
+				9ED0D4D3156B486500A00D6C /* Carbon.framework */,
+				9E597334154C045400D71B96 /* Cocoa.framework */,
+				9E597332154C043700D71B96 /* IOKit.framework */,
+				9E597330154C042800D71B96 /* Security.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9E2B61A50B7C7C3D009625A7 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				9EDCA87915DD1303001CCAA5 /* beep3.wav */,
+				9EDCA87A15DD1303001CCAA5 /* beep4.wav */,
+				9EDCA87515DD114D001CCAA5 /* beep1.wav */,
+				9EDCA87615DD114D001CCAA5 /* beep2.wav */,
+			);
+			name = Sounds;
+			sourceTree = "<group>";
+		};
+		9E2B61A70B7C7C48009625A7 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				9E2B61A90B7C7C6C009625A7 /* Icons */,
+				9E2B61A80B7C7C4D009625A7 /* Status Bar */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		9E2B61A80B7C7C4D009625A7 /* Status Bar */ = {
+			isa = PBXGroup;
+			children = (
+				9EF7106716994C4D00DF0B48 /* IdleSleep@2x.png */,
+				9EF7106816994C4D00DF0B48 /* LidIdleSleep@2x.png */,
+				9EF7106916994C4D00DF0B48 /* LidSleep@2x.png */,
+				9EF7106A16994C4D00DF0B48 /* Normal@2x.png */,
+				9EF7105516993EAB00DF0B48 /* IdleSleep.png */,
+				9EF7105616993EAB00DF0B48 /* LidIdleSleep.png */,
+				9EF7105716993EAB00DF0B48 /* LidSleep.png */,
+				9EF7105816993EAB00DF0B48 /* Normal.png */,
+			);
+			name = "Status Bar";
+			sourceTree = "<group>";
+		};
+		9E2B61A90B7C7C6C009625A7 /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				9E6322F70B789A8600177E88 /* InsomniaX.icns */,
+			);
+			name = Icons;
+			sourceTree = "<group>";
+		};
+		9E2B61AA0B7C7C80009625A7 /* Engines */ = {
+			isa = PBXGroup;
+			children = (
+				9EDCA86715DD0B7E001CCAA5 /* Insomnia_r11.kext */,
+				9E1EEC150BEB2C9100490683 /* loader */,
+			);
+			name = Engines;
+			sourceTree = "<group>";
+		};
+		9E898F8F15DE54A2003651EF /* Signing Tools */ = {
+			isa = PBXGroup;
+			children = (
+				9E898F9015DE54A2003651EF /* dsa_priv.pem */,
+				9E898F9115DE54A2003651EF /* dsa_pub.pem */,
+				9E898F9215DE54A2003651EF /* sign_update.rb */,
+			);
+			path = "Signing Tools";
+			sourceTree = "<group>";
+		};
+		9EB67B2F15D9297500BE9BC3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9EB67B3815D9297500BE9BC3 /* ShortcutRecorder.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9EBBD76C13F68E3F00CE9547 /* SMC */ = {
+			isa = PBXGroup;
+			children = (
+				9EBBD76F13F68E5E00CE9547 /* smc.c */,
+				9EBBD77013F68E5E00CE9547 /* smc.h */,
+			);
+			name = SMC;
+			sourceTree = "<group>";
+		};
+		9EDCA85F15DD0985001CCAA5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9EDCA86615DD0985001CCAA5 /* Insomnia_r11.kext */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9EE2929F0BF1E24400BC3839 /* Loader */ = {
+			isa = PBXGroup;
+			children = (
+				9E03303D0CD37F19008F7547 /* authtool.h */,
+				9E03303E0CD37F19008F7547 /* authtool.c */,
+				9E03303F0CD37F19008F7547 /* auth_tool_run.c */,
+			);
+			name = Loader;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D1107260486CEB800E47090 /* InsomniaX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "InsomniaX" */;
+			buildPhases = (
+				8D1107290486CEB800E47090 /* Resources */,
+				9ED679470B756919004CFFEB /* CopyFiles */,
+				8D11072E0486CEB800E47090 /* Frameworks */,
+				8D11072C0486CEB800E47090 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = InsomniaX;
+			productInstallPath = "$(HOME)/Applications";
+			productName = InsomniaX;
+			productReference = 8D1107320486CEB800E47090 /* InsomniaX.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9EC3F4C00BEC64B600F13084 /* loader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9EC3F4CC0BEC64C400F13084 /* Build configuration list for PBXNativeTarget "loader" */;
+			buildPhases = (
+				9EC3F4BE0BEC64B600F13084 /* Sources */,
+				9EC3F4BF0BEC64B600F13084 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = loader;
+			productName = loader;
+			productReference = 9EC3F4C10BEC64B600F13084 /* loader */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+			};
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "InsomniaX" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+				ja,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* InsomniaX */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 9EDCA85F15DD0985001CCAA5 /* Products */;
+					ProjectRef = 9EDCA85E15DD0985001CCAA5 /* Insomnia.xcodeproj */;
+				},
+				{
+					ProductGroup = 9EB67B2F15D9297500BE9BC3 /* Products */;
+					ProjectRef = 9EB67B2E15D9297500BE9BC3 /* ShortcutRecorder.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				9EC3F4C00BEC64B600F13084 /* loader */,
+				9E93C564139B4D67005AD53B /* InsomniaX with Loader */,
+				9EDCA86915DD0C6F001CCAA5 /* InsomniaX with dependencies */,
+				8D1107260486CEB800E47090 /* InsomniaX */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		9EB67B3815D9297500BE9BC3 /* ShortcutRecorder.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ShortcutRecorder.framework;
+			remoteRef = 9EB67B3715D9297500BE9BC3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9EDCA86615DD0985001CCAA5 /* Insomnia_r11.kext */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = Insomnia_r11.kext;
+			remoteRef = 9EDCA86515DD0985001CCAA5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D1107290486CEB800E47090 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EF7107316994D0B00DF0B48 /* IdleSleep.png in Resources */,
+				9EF7107416994D0B00DF0B48 /* LidIdleSleep.png in Resources */,
+				9EF7107516994D0B00DF0B48 /* LidSleep.png in Resources */,
+				9EF7107616994D0B00DF0B48 /* Normal.png in Resources */,
+				9EF7106F16994CD300DF0B48 /* IdleSleep@2x.png in Resources */,
+				9EF7107016994CD300DF0B48 /* LidIdleSleep@2x.png in Resources */,
+				9EF7107116994CD300DF0B48 /* LidSleep@2x.png in Resources */,
+				9EF7107216994CD300DF0B48 /* Normal@2x.png in Resources */,
+				9E23B22F139B7E610073ABA9 /* loader in Resources */,
+				8D11072A0486CEB800E47090 /* MainMenu.nib in Resources */,
+				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
+				9E6322FB0B789A8600177E88 /* InsomniaX.icns in Resources */,
+				9E0F8AB70B8DBF33000ADC27 /* Credits.html in Resources */,
+				9EC3F44F0BEC31A000F13084 /* donate.gif in Resources */,
+				9E56DF1B0C426E3A00147404 /* Readme.rtf in Resources */,
+				9E7992080C6D44BB003B21D4 /* Localizable.strings in Resources */,
+				9EDCA86815DD0B7E001CCAA5 /* Insomnia_r11.kext in Resources */,
+				9ED0D4D1156B47B400A00D6C /* Rules.plist in Resources */,
+				9EDCA87715DD114D001CCAA5 /* beep1.wav in Resources */,
+				9EDCA87815DD114D001CCAA5 /* beep2.wav in Resources */,
+				9EDCA87B15DD1303001CCAA5 /* beep3.wav in Resources */,
+				9EDCA87C15DD1303001CCAA5 /* beep4.wav in Resources */,
+				9E898F9415DE54A2003651EF /* dsa_pub.pem in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D11072C0486CEB800E47090 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072D0486CEB800E47090 /* main.m in Sources */,
+				9E3A1B190B5E324E0006A37F /* ButtonController.m in Sources */,
+				9E4B3C02139DD296009F70A4 /* LaunchAtLoginController.m in Sources */,
+				9EBBD77213F68E5E00CE9547 /* smc.c in Sources */,
+				9E1EB51015D797D4008F0708 /* PTHotKey.m in Sources */,
+				9E1EB51115D797D4008F0708 /* PTHotKeyCenter.m in Sources */,
+				9E1EB51215D797D4008F0708 /* PTKeyCodeTranslator.m in Sources */,
+				9E1EB51315D797D4008F0708 /* PTKeyCombo.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9EC3F4BE0BEC64B600F13084 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E0330710CD3827B008F7547 /* authtool.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9E93C568139B4D83005AD53B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9EC3F4C00BEC64B600F13084 /* loader */;
+			targetProxy = 9E93C567139B4D83005AD53B /* PBXContainerItemProxy */;
+		};
+		9E93C56A139B4D85005AD53B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8D1107260486CEB800E47090 /* InsomniaX */;
+			targetProxy = 9E93C569139B4D85005AD53B /* PBXContainerItemProxy */;
+		};
+		9EDCA86E15DD0C7D001CCAA5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9EC3F4C00BEC64B600F13084 /* loader */;
+			targetProxy = 9EDCA86D15DD0C7D001CCAA5 /* PBXContainerItemProxy */;
+		};
+		9EDCA87015DD0C82001CCAA5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ShortcutRecorder.framework;
+			targetProxy = 9EDCA86F15DD0C82001CCAA5 /* PBXContainerItemProxy */;
+		};
+		9EDCA87215DD0C84001CCAA5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Insomnia Extension";
+			targetProxy = 9EDCA87115DD0C84001CCAA5 /* PBXContainerItemProxy */;
+		};
+		9EDCA87415DD0CBF001CCAA5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8D1107260486CEB800E47090 /* InsomniaX */;
+			targetProxy = 9EDCA87315DD0CBF001CCAA5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		089C165CFE840E0CC02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C165DFE840E0CC02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		29B97318FDCFA39411CA2CEA /* MainMenu.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				29B97319FDCFA39411CA2CEA /* English */,
+			);
+			name = MainMenu.nib;
+			sourceTree = "<group>";
+		};
+		9E0F8AB60B8DBF33000ADC27 /* Credits.html */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9E0F8AB40B8DBF1E000ADC27 /* English */,
+			);
+			name = Credits.html;
+			sourceTree = "<group>";
+		};
+		9E7992060C6D44BB003B21D4 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9E7992070C6D44BB003B21D4 /* English */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9E93C565139B4D67005AD53B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PRODUCT_NAME = "InsomniaX with Loader";
+			};
+			name = Debug;
+		};
+		9E93C566139B4D67005AD53B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				PRODUCT_NAME = "InsomniaX with Loader";
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		9EC3F4CD0BEC64C400F13084 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = "";
+				INSTALL_PATH = "";
+				PRODUCT_NAME = loader;
+				SDKROOT = macosx;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		9EC3F4CE0BEC64C400F13084 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = "";
+				INSTALL_PATH = "";
+				PRODUCT_NAME = loader;
+				SDKROOT = macosx;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		9EDCA86B15DD0C6F001CCAA5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9EDCA86C15DD0C6F001CCAA5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		C01FCF4B08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_1)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_2)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_3)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_4)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_5)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_6)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_7)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_8)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_8)",
+					"\"$(SRCROOT)\"",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_1 = "\"$(SRCROOT)\"";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = /Applications;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = InsomniaX;
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		C01FCF4C08A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_1)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_2)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_3)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_4)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_5)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_6)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_7)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_8)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_8)",
+					"\"$(SRCROOT)\"",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_1 = "\"$(SRCROOT)\"";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = /Applications;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = InsomniaX;
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Developer ID Application: Andrew James";
+				FRAMEWORK_SEARCH_PATHS = "$(TARGET_BUILD_DIR)";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(TARGET_BUILD_DIR)",
+					"$(PWD)/shortcutrecorder/Framework",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "";
+				SDKROOT = macosx10.9;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Developer ID Application: Andrew James";
+				FRAMEWORK_SEARCH_PATHS = "$(TARGET_BUILD_DIR)";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(TARGET_BUILD_DIR)",
+					"$(PWD)/shortcutrecorder/Framework",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PROVISIONING_PROFILE = "";
+				SDKROOT = macosx10.9;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9E93C57D139B4DAF005AD53B /* Build configuration list for PBXAggregateTarget "InsomniaX with Loader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E93C565139B4D67005AD53B /* Debug */,
+				9E93C566139B4D67005AD53B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9EC3F4CC0BEC64C400F13084 /* Build configuration list for PBXNativeTarget "loader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9EC3F4CD0BEC64C400F13084 /* Debug */,
+				9EC3F4CE0BEC64C400F13084 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9EDCA86A15DD0C6F001CCAA5 /* Build configuration list for PBXAggregateTarget "InsomniaX with dependencies" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9EDCA86B15DD0C6F001CCAA5 /* Debug */,
+				9EDCA86C15DD0C6F001CCAA5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "InsomniaX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4B08A954540054247B /* Debug */,
+				C01FCF4C08A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "InsomniaX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
