@@ -4,6 +4,26 @@ InsomniaX - Keep your Mac awake the easy way
 ## Description
 It always has been a missing feature: disabling the sleep mode on a Apple Laptop. Who does not want to use it as a big juke-box or go warwalking? The best looking server ever, especially at about one-inch height. This small utility is what you will want. This small utility acts as a wrapper to the Insomnia kernel extension.
 
+## Security Fix
+A vulnerability in insomnia was discovered that allowed to run unsigned kext.
+A fix proposed by Mark Wadham is available here: https://m4.rkw.io/blog/security-fix-for-insomniax-218.html
+
+1. Install Insomnia X to /Applications
+2. Download the patch from: https://m4.rkw.io/insomnia_218_patch.sh.txt
+3. (Optional) Delete the .txt extension
+4. Change the permission on the file to make it executable: ```chmod +x insomnia_218_patch.sh```
+5. Run the patch script: ```./insomnia_218_patch.sh```
+
+## Installing On OSX 10.12 and afterward
+It seems that on systems with gatekeeper active, the kext module is not correctly loaded, if when the option *Disable Lid Sleep* is pressed the icon doesn't change you are most likely affected. In that case use the following workaround:
+
+1. Disable Gatekeeper: ```sudo spctl --master-disable ```
+2. Launch InsomniaX and enable the option ```disable lid sleep```, fill out the administration password prompt if needed
+3. Rejoice, InsomniaX should be working and the kext should now be trusted by the system
+4. Re-Enable Gatekeeper:
+  - Either use: ```sudo spctl --master-enable```
+  - Or change the selector in Preferences->Security & Privacy->Generic back to AppStore & Signed Apps (Or even the more strict AppStore Only)
+
 ## Application Guidelines
 To assist in other developers looking to optimise or add new features to the InsomniaX open source branch, some guidelines have been provided to ensure the essence of InsomniaX remains.
 - Insomnia KEXT should be as light weight as possible (KISS).
